@@ -1,0 +1,46 @@
+
+.parallax-container1 {
+  height: 150px;
+}
+
+.parallax-container2 {
+  height: 300px;
+}
+
+.parallax-container3 {
+  height: 300px;
+}
+
+.search-icon {
+  color: white !important
+}
+
+.search-input {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.headhesive {
+  position: fixed;
+  padding-left: 210px;
+  padding-right: 210px;
+  transform: translateY(-100%);
+  transition: 0.1s;
+  z-index: 100;
+}
+
+.headhesive--stick {
+  transform: translateY(0);
+}
+
+.container .slider {
+  margin-top: 10px !important;
+}
+
+.section {
+  height: 700px;
+}
+
+section {
+  display: block !important;
+}
