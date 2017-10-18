@@ -1,194 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>TEST</title>
   <meta charset="utf-8">
-  <title>Lending Page</title>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
-  <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
-
-  <section id="home">
-
-    <div class="parallax-container parallax-container1">
-      <div class="parallax">
-        <img src="img/logo.jpg">
+  <div class="header">
+    <img class="logo-img" src="logo.png" alt="img">
+    <h1 class="logo-text">Dor Stroi Engineering</h1>
+  </div>
+  <div class="container container-grid">
+    <div class="sidebar">
+      <div class="sidebar-menu">
+        <a href="#"><li class="bc-white">Главная</li></a>
+        <a href="#"><li class="bc-white">Услуги</li></a>
+        <a href="#"><li class="bc-white">Спецтехника</li></a>
+        <a href="#"><li class="bc-white">Прайс-лист</li></a>
+        <a href="#"><li class="bc-white">О компании</li></a>
+        <a href="#"><li class="bc-white">Контакты</li></a>
+        <a href="#"><li class="bc-white">Наши проекты</li></a>
+      </div>
+      <div class="sidebar-currency bc-white">
+        <table>
+          <tr>
+            <td>USD</td>
+            <td>68,50</td>
+          </tr>
+          <tr>
+            <td>EURO</td>
+            <td>80,00</td>
+          </tr>
+          <tr>
+            <td>RUB</td>
+            <td>1,1870</td>
+          </tr>
+          <tr>
+            <td>KZT</td>
+            <td>0,1850</td>
+          </tr>
+        </table>
+      </div>
+      <div class="sidebar-contacts bc-white">
+        <table>
+          <tr>
+            <td>Jack</td>
+            <td>+996777009988</td>
+          </tr>
+          <tr>
+            <td>Katy</td>
+            <td>+996555666777</td>
+          </tr>
+          <tr>
+            <td>Mirlan</td>
+            <td>+996777777777</td>
+          </tr>
+        </table>
       </div>
     </div>
-
-  </section>
-
-  <div class="section white">
-    <div class="row container">
-
-        <!-- HEADER -->
-        <nav class="light-green darken-1 header">
-          <div class="nav-wrapper">
-
-            <div class="row">
-              <div class="col s12 m12 l8">
-
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-
-                <ul id="mobile-demo" class="left hide-on-med-and-down">
-                  <li><a class="scrollToId" href="#home">Home</a></li>
-                  <li><a class="scrollToId" href="#second">Second Page</a></li>
-                  <li><a class="scrollToId" href="#test4">Third Page</a></li>
-                  <li><a class="scrollToId" href="#test4">Fourth Page</a></li>
-                  <li><a class="scrollToId" href="#test4">Sixth Page</a></li>
-                  <li><a class="scrollToId" href="#test4">Seventh Page</a></li>
-                </ul>
-
-              </div>
-
-              <div class="input-field col s12 m12 l4">
-                <i class="material-icons prefix fa fa-search search-icon" aria-hidden="true"></i>
-                <input id="icon_prefix" class="search-input" type="text" placeholder="Search">
-              </div>
-
-            </div>
-
-          </div>
-        </nav>
-        <!-- END HEADER -->
-
-        <!-- SLIDER -->
-        <div class="slider">
-          <ul class="slides">
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
-              <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-              </div>
-            </li>
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-              <div class="caption left-align">
-                <h3>Left Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-              </div>
-            </li>
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
-              <div class="caption right-align">
-                <h3>Right Aligned Caption</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-              </div>
-            </li>
-            <li>
-              <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-              <div class="caption center-align">
-                <h3>This is our big Tagline!</h3>
-                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <!-- END SLIDER -->
+    <div class="content content-grid">
+      <div class="slider fotorama" data-autoplay="true">
+        <img src="1.png">
+        <img src="2.png">
+        <img src="3.png">
+      </div>
+      <div class="blog">
+        <img class="blog-img" src="car.jpg" alt="blog">
+        <h3>Title</h3>
+      </div>
+      <div class="blog">
+        <img class="blog-img" src="car.jpg" alt="blog">
+        <h3>Title</h3>
+      </div>
+      <div class="blog">
+        <img class="blog-img" src="car.jpg" alt="blog">
+        <h3>Title</h3>
+      </div>
+      <div class="blog">
+        <img class="blog-img" src="car.jpg" alt="blog">
+        <h3>Title</h3>
+      </div>
+      <div class="blog">
+        <img class="blog-img" src="car.jpg" alt="blog">
+        <h3>Title</h3>
+      </div>
+      <div class="blog">
+        <img class="blog-img" src="car.jpg" alt="blog">
+        <h3>Title</h3>
+      </div>
+      <div class="blog">
+        <img class="blog-img" src="car.jpg" alt="blog">
+        <h3>Title</h3>
+      </div>
+      <div class="blog">
+        <img class="blog-img" src="car.jpg" alt="blog">
+        <h3>Title</h3>
+      </div>
     </div>
   </div>
-
-  <div class="parallax-container parallax-container2">
-    <div class="parallax"><img src="https://lh3.googleusercontent.com/A3PrtgKYbL2ycFLErMpEWyK6LeGAMJrTZftknLSc8fNyaBysDMY8PcxHrNekGfS0b395=h1264"></div>
-  </div>
-
-  <section id="second">
-
-      <div class="section white">
-        <div class="row container">
-
-            <div class="col s12 m12 l3">
-              <ul class="collection with-header">
-                <li class="collection-header"><h4>First Names</h4></li>
-                <a class="collection-item">Alvin</a>
-                <a class="collection-item">Alvin</a>
-                <a class="collection-item">Alvin</a>
-                <a class="collection-item">Alvin</a>
-              </ul>
-            </div>
-
-            <div class="col s12 m12 l6">
-              <ul class="collection with-header">
-                <li class="collection-header"><h4>First Names</h4></li>
-                <a class="collection-item">Alvin</a>
-                <a class="collection-item">Alvin</a>
-                <a class="collection-item">Alvin</a>
-                <a class="collection-item">Alvin</a>
-              </ul>
-            </div>
-
-            <div class="col s12 m12 l3">
-              <ul class="collection with-header">
-                <li class="collection-header"><h4>First Names</h4></li>
-                <a class="collection-item">Alvin</a>
-                <a class="collection-item">Alvin</a>
-                <a class="collection-item">Alvin</a>
-                <a class="collection-item">Alvin</a>
-              </ul>
-            </div>
-
-        </div>
-      </div>
-
-  </section>
-
-  <div class="parallax-container parallax-container3">
-    <div class="parallax"><img src="http://www.skaufmannagency.com/images/umbrella.jpg"></div>
-  </div>
-
-<!--******************************** FOOTER *********************************-->
-
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      © 2014 Copyright Text
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-      </div>
-    </div>
-  </footer>
-
-<!--******************************* SCRIPTS *********************************-->
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/page-scroll-to-id-master/jquery.malihu.PageScroll2id.js"></script>
-  <script type="text/javascript" src="js/headhesive.min.js"></script>
-  <script type="text/javascript">
-
-    $(document).ready(function(){
-      $('.slider').slider();
-      $('.parallax').parallax();
-
-      $(".scrollToId").mPageScroll2id({
-        offset : 50,
-        scrollSpeed : 500
-      });
-
-      var header = new Headhesive('.header');
-
-    });
-
-  </script>
 </body>
 </html>
